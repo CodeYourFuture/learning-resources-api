@@ -8,7 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "/api/v1/**",
+        "source": "/api/v1{,/**}",
+        "dynamicLinks": true,
         "function": "api"
       }
     ]
